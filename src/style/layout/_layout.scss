@@ -1,3 +1,39 @@
 .App {
-    text-align: center;
+  text-align: center;
+  padding: 148px;
+  max-width: 100%;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 2.9;
+  }
+    
+a {
+  cursor: pointer;
+}
+a {
+  color: black !important;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+  a:hover {
+    text-decoration: none !important;
+  }
+  a:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 25%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,246,119,1) 0%, rgba(58,231,179,1) 53%, rgba(0,212,255,1) 100%); 
+  }
+  a:hover:after { 
+    width: 50%; 
   }
