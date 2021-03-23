@@ -1,9 +1,9 @@
 * {
-    font-family: 'Lora', serif;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+    font-family: $font-family;
+    width: $max-width;
+    height: $height;
+    align-items: $justify;
+    justify-content: $justify;
     box-sizing: border-box;
 }
 

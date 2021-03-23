@@ -1,22 +1,20 @@
 .App {
-  text-align: center;
+  text-align: $text-align;
   padding: 148px;
-  max-width: 100%;
+  max-width: $max-width;
   font-size: 22px;
   font-weight: 300;
   line-height: 2.9;
   }
     
 a {
+  color: $text-color !important;
   cursor: pointer;
-}
-a {
-  color: black !important;
   text-transform: uppercase;
   text-decoration: none !important;
   letter-spacing: 0.15em;
   display: inline-block;
-  padding: 15px 20px;
+  padding: $link-padding;
   position: relative;
 }
   a:hover {
@@ -37,3 +35,10 @@ a {
   a:hover:after { 
     width: 50%; 
   }
+
+  @include media(720px) {
+    .App {
+      font-size: $media-fontsize;
+      padding: $media-padding;
+    }
+}
